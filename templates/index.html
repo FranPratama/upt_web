@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="id">
+	<head>
+		<title>F I N D S I A | {{ title }}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="{% static 'css/main.css' %}">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="/">F I N D S I A</a></h1>
+							<p>UPT Jaringan Komputer ITB Asia Malang</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="/">Beranda</a></li>
+								<li>
+									<a href="">Produk</a>
+									<ul>
+										<li><a href="/idc">Pembuatan KTM</a></li>
+										<li><a href="/hotspot">Pembuatan ID ASIA Hotspot</a></li>
+									</ul>
+								</li>
+								<li><a href="/staff">Karyawan</a></li>
+								<li><a href="/about">Tentang</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+                {% block content %}
+                {% endblock %}
+
+                <!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Kontak Kami</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Masih ada yang kurang jelas ?</h2>
+							<p>
+								Silahkan menghubungi kontak kami dibawah ini atau dapat menemui kami langsung di<br>
+								ruang UPT Jarkom lantai 1, Kampus 1 Institut Asia Malang.
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Nama">
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email">
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Pesan" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Kirim"></li>
+														<li><input type="reset" class="style2" value="Hapus"></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Alamat</h3>
+													<p>
+														UPT Jaringan Komputer<br />
+														Jl. Soekarno Hatta 1A<br />
+														Rembuksari, Malang<br />
+														Jawa Timur
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Sosial</h3>
+													<p>
+														<a href="" class="icon brands fa-whatsapp"> UPT Jaringan Komputer Institut Asia</a><br>
+														<a href="" class="icon brands fa-google-plus"> UPT Jaringan Komputer</a><br>
+														<a href="" class="icon brands fa-github"> UPT Jarkom</a><br>
+														<a href="" class="icon brands fa-telegram"> UPT ASIA</a><br>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="">uptnet@asia.ac.id</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Nomor Telepon</h3>
+													<p>
+														(082) 142296014
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>2023&copy; UPT Jarkom.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Edited: <a href="https://github.com/franpratama">Ficho Pranandasya AP</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static 'js/browser.min.js' %}"></script>
+			<script src="{% static 'js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</body>
+</html>
