@@ -30,6 +30,7 @@ class FormKTM(ModelForm):
         }
 
         labels = {
+            'nama' : 'Nama Lengkap',
             'nim' : 'NIM',
             'tgl_lahir' : 'Tanggal lahir',
             'kec' : 'Kecamatan',
