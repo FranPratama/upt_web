@@ -1,3 +1,7 @@
 # Project Findsia UPT
 
-PKL by Ficho Pranandasya AP
+Findsia Website (PKL Project)
+
+Developer :
+- Ficho Pranandasya Andrian Pratama (21201099)
+- 
