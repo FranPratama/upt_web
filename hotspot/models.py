@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class hotspot(models.Model):
-    email = models.CharField(max_length=30)
+    email = models.CharField(max_length=50)
     no_telp = models.CharField(max_length=15)
     nama = models.CharField(max_length=100)
     username = models.CharField(max_length=15)

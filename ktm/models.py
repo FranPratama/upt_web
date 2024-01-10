@@ -19,7 +19,7 @@ class ktm(models.Model):
     jurusan = models.ForeignKey(jurusan, on_delete=models.CASCADE)
     tempat_lahir = models.CharField(max_length=50)
     tgl_lahir = models.DateField()
-    alamat = models.CharField(max_length=200)
+    alamat = models.CharField(max_length=250)
     kec = models.CharField(max_length=50)
     kota = models.CharField(max_length=50)
     status = models.ForeignKey(status, on_delete=models.CASCADE)
